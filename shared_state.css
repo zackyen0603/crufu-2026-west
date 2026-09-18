@@ -1,0 +1,9 @@
+.sourceBar{background:#10282a;color:#fff;border-bottom:1px solid #23484b;position:sticky;top:0;z-index:60}
+.sourceBarInner{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 10px}
+.sourceModeGroup,.sourceStatus{display:flex;align-items:center;gap:7px;min-width:0}.sourceLabel{font-size:11px;color:#b7cccc;font-weight:800;letter-spacing:.04em}
+.sourceModeBtn{background:#1c3d40;border:1px solid #31575a;color:#dbeaea;border-radius:999px;padding:5px 10px;font-size:12px;box-shadow:none}
+.sourceModeBtn.active{background:#fff;color:#0b6764;border-color:#fff}.sourceStatus{font-size:11px;color:#c8dada}.sourceStatus b{color:#fff;white-space:nowrap}.sourceDot{width:8px;height:8px;border-radius:50%;display:inline-block;background:#8a969c}.sourceDot.local{background:#9ca3af}.sourceDot.ok{background:#34d399;box-shadow:0 0 0 3px #34d39922}.sourceDot.loading{background:#fbbf24}.sourceDot.error{background:#fb7185}.sourceRefresh{padding:4px 7px;font-size:10px;background:#34575a;color:#fff;border:1px solid #557477;border-radius:7px}
+body.sharedMode .sharedReadonly{opacity:.75}body.sharedMode #calc input:disabled,body.sharedMode #calc select:disabled,body.sharedMode #paces select:disabled{background:#f1f4f5;color:#58666c;opacity:1}
+body.sharedMode .setNow,body.sharedMode .clearActual,body.sharedMode #applyAll,body.sharedMode #resetAssign,body.sharedMode #resetTimes{display:none!important}
+.sharedModeBadge{display:inline-block;padding:2px 7px;border-radius:999px;background:#dff7ea;color:#14613a;font-size:10px;font-weight:800}
+@media(max-width:700px){.sourceBarInner{align-items:flex-start;flex-direction:column;gap:5px}.sourceStatus{width:100%;overflow:auto;white-space:nowrap}.sourceLabel{display:none}}
