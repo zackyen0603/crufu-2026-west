@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
   "race_id": "crufu-2026-west",
-  "revision": 2,
+  "revision": 3,
   "updated_at": "2026-09-19T08:45:00+08:00",
   "updated_by": "ChatGPT for Zack",
   "race_start": "2026-09-19T06:52",
   "paces": {
-    "Martin": "06:30",
-    "Zack": "06:30",
-    "Kevin": "06:30",
-    "Eric.Lin": "06:30",
-    "Eason": "06:30",
+    "Martin": "06:00",
+    "Zack": "06:00",
+    "Kevin": "07:15",
+    "Eric.Lin": "07:15",
+    "Eason": "07:15",
     "Eric.Wang": "06:30",
     "Jim": "06:30",
-    "Heidi": "06:30",
-    "Dora": "06:30",
+    "Heidi": "07:30",
+    "Dora": "07:30",
     "Joe": "06:30",
-    "Ailsa": "06:30"
+    "Ailsa": "07:30"
   },
   "legs": {
     "1": {"runner":"Martin","actual_arrival":"2026-09-19T07:33","adjustment":0,"handoff_wait":0,"neutral_wait":0},
