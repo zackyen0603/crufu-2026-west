@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "race_id": "crufu-2026-west",
-  "revision": 1,
-  "updated_at": "2026-09-18T18:00:00+08:00",
+  "revision": 2,
+  "updated_at": "2026-09-19T08:45:00+08:00",
   "updated_by": "ChatGPT for Zack",
-  "race_start": "2026-09-19T04:00",
+  "race_start": "2026-09-19T06:52",
   "paces": {
     "Martin": "06:30",
     "Zack": "06:30",
@@ -19,8 +19,8 @@
     "Ailsa": "06:30"
   },
   "legs": {
-    "1": {"runner":"Martin","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "2": {"runner":"Zack","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
+    "1": {"runner":"Martin","actual_arrival":"2026-09-19T07:33","adjustment":0,"handoff_wait":0,"neutral_wait":0},
+    "2": {"runner":"Zack","actual_arrival":"2026-09-19T08:21","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "3": {"runner":"Kevin","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "4": {"runner":"Eric.Lin","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "5": {"runner":"Eason","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
