@@ -9,15 +9,27 @@ function durDetail(mins){
  if(h>0)return h+"h "+String(m).padStart(2,"0")+"m "+String(s).padStart(2,"0")+"s";
  return m+"m "+String(s).padStart(2,"0")+"s"
 }
+function numVal(el){var n=Number(el&&el.value);return isFinite(n)&&n>0?n:0}
 function actualForLeg(leg){
  var tr=document.querySelector('tr[data-leg="'+leg+'"]');if(!tr)return null;
  var finishEl=tr.querySelector(".actualArrival"),finish=asDate(finishEl&&finishEl.value);if(!finish)return null;
- var start=null;
- if(leg===1){var rs=id("raceStart");start=asDate(rs&&rs.value)}
- else {var prev=document.querySelector('tr[data-leg="'+(leg-1)+'"] .actualArrival');start=asDate(prev&&prev.value)}
- if(!start||finish<=start)return {start:start,finish:finish,mins:NaN,pace:NaN};
+ var start=null,excludedWait=0;
+ if(leg===1){
+   var rs=id("raceStart");start=asDate(rs&&rs.value)
+ } else {
+   var prevTr=document.querySelector('tr[data-leg="'+(leg-1)+'"]');
+   var prev=prevTr&&prevTr.querySelector(".actualArrival");
+   start=asDate(prev&&prev.value);
+   if(start&&prevTr){
+     var handoff=numVal(prevTr.querySelector(".handoff"));
+     var neutral=numVal(prevTr.querySelector(".neutral"));
+     excludedWait=handoff+neutral;
+     if(excludedWait>0)start=new Date(start.getTime()+excludedWait*60000)
+   }
+ }
+ if(!start||finish<=start)return {start:start,finish:finish,mins:NaN,pace:NaN,excludedWait:excludedWait};
  var mins=(finish-start)/60000,km=Number(tr.dataset.km)||0;
- return {start:start,finish:finish,mins:mins,pace:km>0?mins*60/km:NaN}
+ return {start:start,finish:finish,mins:mins,pace:km>0?mins*60/km:NaN,excludedWait:excludedWait}
 }
 function ensureCells(){
  document.querySelectorAll("tr[data-leg]").forEach(function(tr){
@@ -36,9 +48,13 @@ function render(){
    var leg=Number(tr.dataset.leg),a=actualForLeg(leg),d=tr.querySelector(".actualDurationCell"),p=tr.querySelector(".actualPaceCell");
    if(a&&isFinite(a.mins)&&a.mins>=0){
      d.textContent=durDetail(a.mins);p.textContent=paceTxt(a.pace)+" /km";
+     if(a.excludedWait>0){
+       d.title="已扣除前一棒交接/中立等待 "+Math.round(a.excludedWait)+" 分鐘";
+       p.title=d.title
+     }else{d.removeAttribute("title");p.removeAttribute("title")}
      d.classList.add("hasActualMetric");p.classList.add("hasActualMetric")
    } else {
-     d.textContent="—";p.textContent="—";
+     d.textContent="—";p.textContent="—";d.removeAttribute("title");p.removeAttribute("title");
      d.classList.remove("hasActualMetric");p.classList.remove("hasActualMetric")
    }
  });
@@ -46,8 +62,8 @@ function render(){
 }
 function attach(){
  render();
- document.addEventListener("change",function(e){if(e.target.matches(".actualArrival,#raceStart"))setTimeout(render,20)});
- document.addEventListener("input",function(e){if(e.target.matches(".actualArrival,#raceStart"))setTimeout(render,20)});
+ document.addEventListener("change",function(e){if(e.target.matches(".actualArrival,#raceStart,.handoff,.neutral"))setTimeout(render,20)});
+ document.addEventListener("input",function(e){if(e.target.matches(".actualArrival,#raceStart,.handoff,.neutral"))setTimeout(render,20)});
  var a=id("applyAll");if(a)a.addEventListener("click",function(){setTimeout(render,40)});
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",attach);else attach();
