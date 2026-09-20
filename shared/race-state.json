@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "race_id": "crufu-2026-west",
-  "revision": 26,
-  "updated_at": "2026-09-20T06:27:00+08:00",
+  "revision": 27,
+  "updated_at": "2026-09-20T08:42:00+08:00",
   "updated_by": "ChatGPT for Zack",
   "race_start": "2026-09-19T06:52",
   "paces": {
@@ -43,8 +43,8 @@
     "22": {"runner":"Eric.Lin","actual_arrival":"2026-09-20T04:43","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "23": {"runner":"Ailsa","actual_arrival":"2026-09-20T05:39","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "24": {"runner":"Zack","actual_arrival":"2026-09-20T06:27","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "25": {"runner":"Kevin","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "26": {"runner":"Heidi","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
+    "25": {"runner":"Kevin","actual_arrival":"2026-09-20T07:41","adjustment":0,"handoff_wait":0,"neutral_wait":0},
+    "26": {"runner":"Heidi","actual_arrival":"2026-09-20T08:42","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "27": {"runner":"Joe","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "28": {"runner":"Jim","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
     "29": {"runner":"Eric.Wang","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
