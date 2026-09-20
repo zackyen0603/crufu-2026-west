@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "race_id": "crufu-2026-west",
-  "revision": 27,
-  "updated_at": "2026-09-20T08:42:00+08:00",
+  "revision": 28,
+  "updated_at": "2026-09-20T09:48:00+08:00",
   "updated_by": "ChatGPT for Zack",
   "race_start": "2026-09-19T06:52",
   "paces": {
@@ -19,35 +19,216 @@
     "Ailsa": "07:30"
   },
   "legs": {
-    "1": {"runner":"Martin","actual_arrival":"2026-09-19T07:33","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "2": {"runner":"Zack","actual_arrival":"2026-09-19T08:21","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "3": {"runner":"Kevin","actual_arrival":"2026-09-19T09:22","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "4": {"runner":"Eric.Lin","actual_arrival":"2026-09-19T10:22","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "5": {"runner":"Eason","actual_arrival":"2026-09-19T10:56","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "6": {"runner":"Eric.Wang","actual_arrival":"2026-09-19T11:52","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "7": {"runner":"Jim","actual_arrival":"2026-09-19T12:45","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "8": {"runner":"Heidi","actual_arrival":"2026-09-19T13:30","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "9": {"runner":"Dora","actual_arrival":"2026-09-19T14:35","adjustment":0,"handoff_wait":51,"neutral_wait":0},
-    "10": {"runner":"Joe","actual_arrival":"2026-09-19T16:23","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "11": {"runner":"Eric.Lin","actual_arrival":"2026-09-19T17:25","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "12": {"runner":"Ailsa","actual_arrival":"2026-09-19T18:10","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "13": {"runner":"Eason","actual_arrival":"2026-09-19T18:48","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "14": {"runner":"Zack","actual_arrival":"2026-09-19T19:38","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "15": {"runner":"Kevin","actual_arrival":"2026-09-19T20:39","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "16": {"runner":"Dora","actual_arrival":"2026-09-19T21:52","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "17": {"runner":"Heidi","actual_arrival":"2026-09-19T22:48","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "18": {"runner":"Eric.Wang","actual_arrival":"2026-09-19T23:43","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "19": {"runner":"Joe","actual_arrival":"2026-09-20T00:45","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "20": {"runner":"Jim","actual_arrival":"2026-09-20T01:38","adjustment":0,"handoff_wait":0,"neutral_wait":52},
-    "21": {"runner":"Eason","actual_arrival":"2026-09-20T03:38","custom_arrival":"2026-09-20T04:15","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "22": {"runner":"Eric.Lin","actual_arrival":"2026-09-20T04:43","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "23": {"runner":"Ailsa","actual_arrival":"2026-09-20T05:39","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "24": {"runner":"Zack","actual_arrival":"2026-09-20T06:27","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "25": {"runner":"Kevin","actual_arrival":"2026-09-20T07:41","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "26": {"runner":"Heidi","actual_arrival":"2026-09-20T08:42","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "27": {"runner":"Joe","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "28": {"runner":"Jim","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "29": {"runner":"Eric.Wang","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0},
-    "30": {"runner":"Dora","actual_arrival":"","adjustment":0,"handoff_wait":0,"neutral_wait":0}
+    "1": {
+      "runner": "Martin",
+      "actual_arrival": "2026-09-19T07:33",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "2": {
+      "runner": "Zack",
+      "actual_arrival": "2026-09-19T08:21",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "3": {
+      "runner": "Kevin",
+      "actual_arrival": "2026-09-19T09:22",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "4": {
+      "runner": "Eric.Lin",
+      "actual_arrival": "2026-09-19T10:22",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "5": {
+      "runner": "Eason",
+      "actual_arrival": "2026-09-19T10:56",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "6": {
+      "runner": "Eric.Wang",
+      "actual_arrival": "2026-09-19T11:52",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "7": {
+      "runner": "Jim",
+      "actual_arrival": "2026-09-19T12:45",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "8": {
+      "runner": "Heidi",
+      "actual_arrival": "2026-09-19T13:30",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "9": {
+      "runner": "Dora",
+      "actual_arrival": "2026-09-19T14:35",
+      "adjustment": 0,
+      "handoff_wait": 51,
+      "neutral_wait": 0
+    },
+    "10": {
+      "runner": "Joe",
+      "actual_arrival": "2026-09-19T16:23",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "11": {
+      "runner": "Eric.Lin",
+      "actual_arrival": "2026-09-19T17:25",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "12": {
+      "runner": "Ailsa",
+      "actual_arrival": "2026-09-19T18:10",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "13": {
+      "runner": "Eason",
+      "actual_arrival": "2026-09-19T18:48",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "14": {
+      "runner": "Zack",
+      "actual_arrival": "2026-09-19T19:38",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "15": {
+      "runner": "Kevin",
+      "actual_arrival": "2026-09-19T20:39",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "16": {
+      "runner": "Dora",
+      "actual_arrival": "2026-09-19T21:52",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "17": {
+      "runner": "Heidi",
+      "actual_arrival": "2026-09-19T22:48",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "18": {
+      "runner": "Eric.Wang",
+      "actual_arrival": "2026-09-19T23:43",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "19": {
+      "runner": "Joe",
+      "actual_arrival": "2026-09-20T00:45",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "20": {
+      "runner": "Jim",
+      "actual_arrival": "2026-09-20T01:38",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 52
+    },
+    "21": {
+      "runner": "Eason",
+      "actual_arrival": "2026-09-20T03:38",
+      "custom_arrival": "2026-09-20T04:15",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "22": {
+      "runner": "Eric.Lin",
+      "actual_arrival": "2026-09-20T04:43",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "23": {
+      "runner": "Ailsa",
+      "actual_arrival": "2026-09-20T05:39",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "24": {
+      "runner": "Zack",
+      "actual_arrival": "2026-09-20T06:27",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "25": {
+      "runner": "Kevin",
+      "actual_arrival": "2026-09-20T07:41",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "26": {
+      "runner": "Heidi",
+      "actual_arrival": "2026-09-20T08:42",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "27": {
+      "runner": "Joe",
+      "actual_arrival": "2026-09-20T09:46",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "28": {
+      "runner": "Jim",
+      "actual_arrival": "",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "29": {
+      "runner": "Eric.Wang",
+      "actual_arrival": "",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    },
+    "30": {
+      "runner": "Dora",
+      "actual_arrival": "",
+      "adjustment": 0,
+      "handoff_wait": 0,
+      "neutral_wait": 0
+    }
   }
 }
